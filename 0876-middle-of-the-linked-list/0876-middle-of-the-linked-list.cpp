@@ -9,29 +9,26 @@
  * };
  */
 class Solution {
+    queue<ListNode*> q;
 public:
     
         
     ListNode* middleNode(ListNode* head) {
         
         
-        int n=0;
-       ListNode * temp=head;
-        while(temp!=NULL)
+        if( head != NULL )
         {
-            n++;
-            temp=temp->next;
+            while( head != NULL )
+            {
+                q.push(head);
+                head = head->next;
+            }
+            int n = q.size()/2;
+            while(n--)
+                q.pop();
+            return q.front();
         }
-
-        n=n/2;
-        
-        temp=head;
-
-        while(n--)
-        {
-            temp=temp-> next;
-        }
-        return temp;
+        return NULL;
         
         
         
