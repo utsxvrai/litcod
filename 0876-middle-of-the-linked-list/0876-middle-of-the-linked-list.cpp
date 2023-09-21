@@ -15,20 +15,12 @@ public:
         
     ListNode* middleNode(ListNode* head) {
         
-        
-        if( head != NULL )
-        {
-            while( head != NULL )
-            {
-                q.push(head);
-                head = head->next;
-            }
-            int n = q.size()/2;
-            while(n--)
-                q.pop();
-            return q.front();
+        ListNode *slow = head, *fast = head;
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
         }
-        return NULL;
+        return slow;
         
         
         
