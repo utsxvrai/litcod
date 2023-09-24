@@ -14,19 +14,13 @@ class Solution{
   public:
     int missingNumber(vector<int>& array, int n) {
         // Your code goes here
-    int xorArr = 0;
-    int xorN = 0;
-
-    for (int i = 0; i < n - 1; i++) {
-        xorArr ^= array[i];
-    }
-
-    for (int i = 1; i <= n; i++) {
-        xorN ^= i;
-    }
-
-    return xorArr ^ xorN;
-        
+        int x = 0;
+        int i;
+        for (i = 0; i < n-1; i++) {
+            int y = (i + 1) ^ array[i];
+            x ^= y;
+        }
+        return (x ^ (i+1));
     }
 };
 
