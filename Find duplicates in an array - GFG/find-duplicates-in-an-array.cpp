@@ -6,18 +6,22 @@ using namespace std;
 class Solution{
   public:
     vector<int> duplicates(int arr[], int n) {
-        
-        vector<int> ans(n,0);
-        vector<int> siu;
-        for(int i = 0 ; i < n ; i++){
-            ans[arr[i]]++;
-        }
-        for(int i = 0 ; i < n ; i++){
-            if(ans[i]>1) siu.push_back(i);
-        }
-        if(siu.size()==0) siu.push_back(-1);
-        return siu;
-        
+        // code here
+         map<int,int> mp;
+         vector<int> siu;
+         int c=0;
+         for(int i = 0 ; i < n ; i ++){
+             mp[arr[i]]++;
+         }
+         for(auto const & i : mp){
+             if(i.second >= 2){
+                 siu.push_back(i.first);
+                 c++;
+             }
+         }
+         if(c==0) return {-1};
+         return siu;
+             
     }
 };
 
