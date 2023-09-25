@@ -1,11 +1,7 @@
 class Solution {
 public:
     int numberOfEmployeesWhoMetTarget(vector<int>& hours, int target) {
-        int c=0;
-        for(auto i : hours){
-            if(i>=target) c++;    
-        
-        }
-        return c;
+        sort(hours.begin(),hours.end());
+        return hours.size()-(lower_bound(hours.begin(),hours.end(),target)-hours.begin());
     }
 };
