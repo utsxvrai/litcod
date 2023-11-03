@@ -18,10 +18,7 @@ public:
             ans += (m * (m - 1)) / 2;
         }
         
-        if (k == 0) {
-            // Handle division by zero
-            ans += pre[0] * (pre[0] - 1) / 2;
-        }
+        
         
         return static_cast<int>(ans);
         
