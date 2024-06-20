@@ -9,24 +9,24 @@ public:
         
     int i = 0;
     int j = 0;
-    int counter = t.size();
+    int counter =0;
     int minStart = 0;
     int minLength = INT_MAX;
     while (j < s.size()) {
         if (m[s[j]] > 0) {
-            counter--;
+            counter++;
         }
             
         m[s[j]]--;
         j++;  
-        while (counter == 0) {
+        while (counter == t.size()) {
             if (j - i < minLength) {
                 minStart = i;
                 minLength = j - i;
             }
             m[s[i]]++;
             if (m[s[i]] > 0) {
-                counter++;
+                counter--;
             }
             i++;
             }
