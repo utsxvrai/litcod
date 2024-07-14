@@ -12,52 +12,36 @@ class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         
-        //simple way
+        ListNode* dummy = new ListNode();
+        ListNode* curr = dummy;
+        int c(0);
         
-        ListNode* l3 = new ListNode(0);
-        ListNode* curr;
-        curr = l3;
-        int c=0;
-        while(l1 and l2){
-            int v = l1->val + l2->val+c;
-            int n = v%10;
-            c = v/10;
+        while(l1!=nullptr or l2 != nullptr){
+            int a = (l1!=nullptr) ? l1->val : 0;
+            int b = (l2!=nullptr) ? l2->val : 0;
+            
+            int sum = a + b +c;
+            int n = sum%10;
+            c = sum/10;
             
             ListNode* temp = new ListNode(n);
             curr->next = temp;
-            curr = temp;
+            curr = curr->next;
             
-            l1 = l1->next;
-            l2 = l2->next;
+            if (l1 != NULL) {
+                l1 = l1->next;
+            }
+            if (l2 != NULL) {
+                l2 = l2->next;
+            }
         }
-        while(l1){
-            int v = l1->val+c;
-            int n = v%10;
-            c = v/10;
-            
-            ListNode* temp = new ListNode(n);
-            curr->next = temp;
-            curr = temp;
-            
-            l1 = l1->next;
+        if (c == 1) {
+            curr->next = new ListNode(1);
         }
-        while(l2){
-            int v = l2->val+c;
-            int n = v%10;
-            c = v/10;
-            
-            ListNode* temp = new ListNode(n);
-            curr->next = temp;
-            curr = temp;
-            
-            l2 = l2->next;
-        }
-        if(c){
-            ListNode* temp = new ListNode(c);
-            curr->next = temp;
-            curr = temp;
-        }
-        return l3->next;
+        
+        return dummy->next;
+        
+        
         
     }
 };
