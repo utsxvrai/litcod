@@ -6,8 +6,7 @@ public:
         bool digit = false;
         for (auto i : s) {
             if (i == '+' || i == '-') {
-                // now if we got +,- after some digits we make sure if its after
-                // the e
+                
                 if ((digit||vis.size()!=0) && pre != 'e' && pre != 'E')
                     return false;
                 vis.insert(i);
@@ -19,7 +18,6 @@ public:
 
                 vis.insert('e');
             } else if (i == '.') {
-                // there shouldn't be two dots or dot after 'e'
                 if (vis.find('.') != vis.end() || vis.find('e') != vis.end())
                     return false;
 
@@ -31,7 +29,6 @@ public:
             }
             pre = i;
         }
-        // string should not end with +, -,  e, E  or without any digits
         return pre != '+' && pre != '-' && pre != 'e' && pre != 'E' && digit;
     }
 };
