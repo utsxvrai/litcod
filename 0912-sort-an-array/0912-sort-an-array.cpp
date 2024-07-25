@@ -4,7 +4,7 @@ public:
         int count[100001] = {0};
         int maxv = 0;
         for (int &n : nums){
-            n += 50000;
+            n += 50000; 
             if(maxv < n) maxv = n;
             ++count[n];
         } 
