@@ -11,27 +11,20 @@
  */
 class Solution {
 public:
+    long long maxx=INT_MIN , total=0;
 
-    long long getsum(TreeNode* root , vector<long long>& sums){
+    long long getsum(TreeNode* root ){
         if(root==NULL) return 0;
-        long long sum = root->val + getsum(root->left,sums) + getsum(root->right,sums);
-        sums.push_back(sum);
-
+        long long sum = root->val + getsum(root->left) + getsum(root->right);
+        maxx = max(maxx, (total-sum)*sum);
         return sum;
     }
     
 
     int maxProduct(TreeNode* root) {
-        vector<long long> sums;
-        long long total = getsum(root, sums);
-        long long maxx=0;
+        total = getsum(root);
+        getsum(root);
 
-        for(auto i : sums){
-            long long res = i * (total - i);
-            if(res > maxx){
-                maxx=res;
-            }
-        }
         return maxx % 1000000007;
     }
 };
