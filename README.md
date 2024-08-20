@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 |  |
 | ------- |
+| [0101-symmetric-tree](https://github.com/utsxvrai/litcod/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0543-diameter-of-binary-tree) |
@@ -15,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0101-symmetric-tree](https://github.com/utsxvrai/litcod/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0543-diameter-of-binary-tree) |
@@ -24,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 |  |
 | ------- |
+| [0101-symmetric-tree](https://github.com/utsxvrai/litcod/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/utsxvrai/litcod/tree/master/0617-merge-two-binary-trees) |
@@ -31,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 |  |
 | ------- |
+| [0101-symmetric-tree](https://github.com/utsxvrai/litcod/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0543-diameter-of-binary-tree) |
