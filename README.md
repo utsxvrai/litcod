@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0543-diameter-of-binary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/utsxvrai/litcod/tree/master/0617-merge-two-binary-trees) |
+| [1465-maximum-product-of-splitted-binary-tree](https://github.com/utsxvrai/litcod/tree/master/1465-maximum-product-of-splitted-binary-tree) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/utsxvrai/litcod/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 ## Depth-First Search
@@ -21,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0543-diameter-of-binary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/utsxvrai/litcod/tree/master/0617-merge-two-binary-trees) |
+| [1465-maximum-product-of-splitted-binary-tree](https://github.com/utsxvrai/litcod/tree/master/1465-maximum-product-of-splitted-binary-tree) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/utsxvrai/litcod/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 ## Breadth-First Search
@@ -39,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/0543-diameter-of-binary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/utsxvrai/litcod/tree/master/0617-merge-two-binary-trees) |
+| [1465-maximum-product-of-splitted-binary-tree](https://github.com/utsxvrai/litcod/tree/master/1465-maximum-product-of-splitted-binary-tree) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/utsxvrai/litcod/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 ## Math
 |  |
